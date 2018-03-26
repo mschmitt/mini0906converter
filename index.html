@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>mini0906 dashcam GPS coordinate converter</title>
+  <script src="jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" href="leaflet/leaflet.css"/>
+  <script src="leaflet/leaflet.js"></script>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <div id="mapid"></div>
+  <div id="ui">
+  <b>mini0906 dashcam GPS coordinate converter</b>
+  <p id="intro">The mini0906 dashcam (and probably others) burn coordinates 
+  into the video that resemble the common "decimal degree" notation used 
+  by most services nowadays, but unfortunately aren't compatible with it and
+  many kilometers off the actual position. This tool is a handy converter 
+  into decimal degrees.</p>
+  <hr/>
+  Enter latitude and longitude as shown in the video:<br/>
+  &nbsp;<br/>
+  <form>
+    <span class="latlonlabel">Latitude:</span> <input type="text" class="input" id="lat" value="50.2764"/>
+  <input type="radio" class="input" name="ns" id="n" checked/>N
+  <input type="radio" class="input" name="ns" id="s"        />S  
+  <br/>
+    <span class="latlonlabel">Longitude:</span> <input type="text" class="input" id="lon" value="7.4604"/>
+  <input type="radio" class="input" id="w" name="we"        />W
+  <input type="radio" class="input" id="e" name="we" checked/>E  
+  </form>
+  <hr/>
+  <ul>
+  <li/> Degrees, minutes, fractions of a minute:
+    <ul>
+      <li/><span id="wgs84_deg_min_minfract"></span>  
+    </ul>
+  <li/> Degrees, fractions of a degree (links to Google maps): <br/>
+    <ul>
+      <li/><a href id="nswe" target="_blank"><span id="wgs84_deg_degfract"></span></a>
+      <li/><a href id="plusminus" target="_blank"><span id="wgs84_deg_degfract_plusminus"></span></a>
+    </ul>
+  </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

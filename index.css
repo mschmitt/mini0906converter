@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#ui {
+  position: relative;
+  width: 400px;
+  z-index: 2;
+  background: white;
+  opacity: 0.9;
+  padding: 20px;
+}
+
+#intro {
+  font-size: xx-small;
+}
+
+#mapid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.leaflet-control-container {
+  display: none;
+}
+
+.latlonlabel {
+  display: inline-block;
+  width: 80px;
+}
