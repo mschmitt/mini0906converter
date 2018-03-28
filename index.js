@@ -8,6 +8,8 @@ mymap.setZoom(13);
 var markerGroup = L.layerGroup().addTo(mymap);
 var marker = L.marker;
 
+L.control.scale().addTo(mymap);
+
 $(document).ready(function() {
   console.log("######################## document.ready ########################");
   $('.input').on('click input keyup propertychange', calculate);

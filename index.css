@@ -14,7 +14,13 @@ body {
 }
 
 #intro {
-  font-size: xx-small;
+  font-size: small;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
 }
 
 #mapid {
@@ -24,11 +30,15 @@ body {
   z-index: 1;
 }
 
-.leaflet-control-container {
+.leaflet-control-zoom {
   display: none;
 }
 
 .latlonlabel {
   display: inline-block;
   width: 80px;
+}
+
+li:last-of-type {
+	margin-bottom: 0.5em;
 }
