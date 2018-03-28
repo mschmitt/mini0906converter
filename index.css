@@ -10,7 +10,7 @@ body {
   z-index: 2;
   background: white;
   opacity: 0.9;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
 }
 
 #intro {
@@ -39,6 +39,18 @@ body {
   width: 80px;
 }
 
+li {
+  line-height: 1.2em;
+}
+
 li:last-of-type {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#copyright {
+  font-size: xx-small;
+}
+
+a {
+  text-decoration: none;
 }
