@@ -40,11 +40,7 @@ body {
 }
 
 li {
-  line-height: 1.2em;
-}
-
-li:last-of-type {
-  margin-bottom: 0.5em;
+  line-height: 1.3em;
 }
 
 #copyright {
